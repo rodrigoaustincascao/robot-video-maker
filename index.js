@@ -3,17 +3,21 @@ const robots = {
   text: require('./robots/text.js')
 }
 
-async function start(){
-  const content = {}
-  content.searchTerm = askAndReturnSearchTem()
+async function start() {
+  const content = {
+    maximumSentences: 7
+  }
+
+  content.searchTerm = askAndReturnSearchTerm()
   content.prefix = askAndReturnPrefix()
 
   await robots.text(content)
-  function askAndReturnSearchTem(){
-    return readline.question('Type a Wikipedia search term:')
+
+  function askAndReturnSearchTerm() {
+    return readline.question('Type a Wikipedia search term: ')
   }
 
-  function askAndReturnPrefix(){
+  function askAndReturnPrefix() {
     const prefixes = ['Who is', 'What is', 'The history of']
     const selectedPrefixIndex = readline.keyInSelect(prefixes, 'Choose one option: ')
     const selectedPrefixText = prefixes[selectedPrefixIndex]
@@ -21,7 +25,7 @@ async function start(){
     return selectedPrefixText
   }
 
-  console.log(content)
+  console.log(JSON.stringify(content, null, 4))
 }
 
 start()
