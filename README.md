@@ -1,4 +1,4 @@
-##Executar
+## Executar
 ```
 $ npm install
 ```
@@ -9,7 +9,7 @@ $ node index.js
 
 ##Credentials format
 
-###Algorithmia
+### Algorithmia
 
 File: algorithmia.json
 
@@ -19,7 +19,7 @@ File: algorithmia.json
 }
 ```
 
-###Watson Natural Language Understanding
+### Watson Natural Language Understanding
 
 File: watson-nlu.json
 
@@ -34,7 +34,7 @@ File: watson-nlu.json
 }
 ```
 
-###Custom Search API
+### Custom Search API
 
 File: google-search.json
 
