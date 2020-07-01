@@ -7,7 +7,7 @@ $ node index.js
 ```
 
 
-##Credentials format
+## Credentials format
 
 ### Algorithmia
 
@@ -79,7 +79,7 @@ $ npm install --save @ffprobe-installer/ffprobe
 ```
 $ npm install open
 ```
-##3 FFMPEG no windows
+### FFMPEG no windows
 * Para fazer o download do ffmpeg, entre no site oficial do ffmpeg: https://www.ffmpeg.org/download.html
 
 * Para utilizar o ffmpeg é necessário colocar a pasta ffmpeg\bin no PATH do Windows.
